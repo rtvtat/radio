@@ -14,6 +14,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void currentStationMax() {
         Radio radio = new Radio();
@@ -23,6 +24,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void currentStationMin() {
         Radio radio = new Radio();
@@ -33,7 +35,7 @@ class RadioTest {
         assertEquals(expected, actual);
     }
 
-        @Test
+    @Test
     void nextStationInRang() {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(5);
@@ -44,6 +46,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void prevStationInRange() {
         Radio radio = new Radio();
@@ -79,6 +82,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void currentVolumeInRange() {
         Radio radio = new Radio();
@@ -88,6 +92,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void currentVolumeMax() {
         Radio radio = new Radio();
@@ -97,6 +102,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void currentVolumeMin() {
         Radio radio = new Radio();
