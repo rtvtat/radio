@@ -10,7 +10,7 @@ class RadioTest {
     @Test
     void currentStationInRange() {
         radio.setCurrentRadioStation(5);
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 5;
 
         assertEquals(expected, actual);
@@ -19,7 +19,7 @@ class RadioTest {
     @Test
     void currentStationMax() {
         radio.setCurrentRadioStation(10);
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 0;
 
         assertEquals(expected, actual);
@@ -28,7 +28,7 @@ class RadioTest {
     @Test
     void currentStationMin() {
         radio.setCurrentRadioStation(-1);
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 9;
 
         assertEquals(expected, actual);
@@ -39,7 +39,7 @@ class RadioTest {
         radio.setCurrentRadioStation(5);
 
         radio.nextRadiostation();
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 6;
 
         assertEquals(expected, actual);
@@ -50,7 +50,7 @@ class RadioTest {
         radio.setCurrentRadioStation(5);
 
         radio.prevRadiostation();
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 4;
 
         assertEquals(expected, actual);
@@ -61,7 +61,7 @@ class RadioTest {
         radio.setCurrentRadioStation(9);
 
         radio.nextRadiostation();
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 0;
 
         assertEquals(expected, actual);
@@ -72,7 +72,7 @@ class RadioTest {
         radio.setCurrentRadioStation(0);
 
         radio.prevRadiostation();
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 9;
 
         assertEquals(expected, actual);
@@ -153,7 +153,7 @@ class RadioTest {
     void name() {
         Radio radio = new Radio(20);
         radio.setCurrentRadioStation(19);
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 19;
 
         assertEquals(expected, actual);
@@ -164,7 +164,7 @@ class RadioTest {
         Radio radio = new Radio(20);
         radio.setCurrentRadioStation(19);
         radio.nextRadiostation();
-        int actual = radio.getCurrentRadiostation();
+        int actual = radio.getCurrentRadioStation();
         int expected = 0;
 
         assertEquals(expected, actual);

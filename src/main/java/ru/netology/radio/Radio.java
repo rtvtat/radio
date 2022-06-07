@@ -1,11 +1,14 @@
 package ru.netology.radio;
 
-public class Radio {
+import lombok.Getter;
 
+public class Radio {
     private int countRadioStation;
+    @Getter
     private int currentRadioStation;
     private int maxVolume = 100;
     private int minVolume = 0;
+    @Getter
     private int currentVolume = minVolume;
 
     public Radio() {
@@ -33,10 +36,6 @@ public class Radio {
         setCurrentRadioStation(currentRadioStation - 1);
     }
 
-    public int getCurrentRadiostation() {
-        return currentRadioStation;
-    }
-
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume > 10) {
             currentVolume = 10;
@@ -54,7 +53,4 @@ public class Radio {
         setCurrentVolume(currentVolume - 1);
     }
 
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
 }
